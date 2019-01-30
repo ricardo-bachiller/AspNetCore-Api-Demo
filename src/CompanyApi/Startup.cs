@@ -229,9 +229,10 @@ namespace CompanyApi
         
         protected virtual void RegisterServices(IServiceCollection services)
         {
-            // Jwt services
+            // Services
             services.AddTransient<IJwtTokenHandler, JwtTokenHandler>();
             services.AddTransient<IJwtFactory, JwtFactory>();
+            services.AddScoped<IUserService, UserService>();
 
             //*********************************************************************************
             // Registering multiple implementations of the same interface IRepository<TEntity>
@@ -240,7 +241,6 @@ namespace CompanyApi
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IUserService, UserService>();
 
             // Entity to Dto Converters
             services.AddTransient<IConverter<Company, CompanyDto>, CompanyToDtoCoverter>();
