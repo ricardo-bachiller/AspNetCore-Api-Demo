@@ -14,7 +14,6 @@ using Microsoft.Extensions.Logging;
 
 namespace CompanyApi.Controllers
 {
-	//[Authorize]
 	[ApiController]
 	[ApiVersion("1.0", Deprecated = true)]
 	[ApiVersion("1.1")]
@@ -39,7 +38,7 @@ namespace CompanyApi.Controllers
 		/// Create Department
 		/// </summary>
 		/// <remarks>This API will create new Department</remarks>
-		/// POST /api/companies/create/{department}
+		/// POST /api/departments/create/{department}
 		/// <param name="department">Department model</param>
 		[MapToApiVersion("1.1")]
 		[HttpPost("create", Name = "CreateDepartment")]
@@ -65,7 +64,7 @@ namespace CompanyApi.Controllers
 		/// Delete Department
 		/// </summary>
 		/// <remarks>This API will delete Department with Id</remarks>
-		/// DELETE /api/companies/{id}
+		/// DELETE /api/departments/{id}
 		/// <param name="id"></param>
 		/// <returns></returns>
 	    [MapToApiVersion("1.1")]
@@ -88,7 +87,7 @@ namespace CompanyApi.Controllers
 		/// Get all Departments
 		/// </summary>
 		/// <remarks>This API return list of all Departments</remarks>
-		/// GET api/companies/getall
+		/// GET api/departments/getall
 		/// <returns>List of Departments</returns>
 		[MapToApiVersion("1.1")]
 		[HttpGet("getall", Name = "GetAllDepartments")]
@@ -110,7 +109,7 @@ namespace CompanyApi.Controllers
 		/// Get Department
 		/// </summary>
 		/// <remarks>This API return Department with Id</remarks>
-		/// GET /api/companies/{id}
+		/// GET /api/departments/{id}
 		/// <param name="id"></param>
 		/// <returns>Return Department</returns>
 		[AllowAnonymous]
@@ -133,7 +132,7 @@ namespace CompanyApi.Controllers
 		/// <summary>
 		/// Update Department
 		/// </summary>
-		/// POST /api/companies/update/{department}
+		/// POST /api/departments/update/{department}
 		/// <param name="department"></param>
 		/// <returns>Returns updated Department</returns>
 		[MapToApiVersion("1.1")]
