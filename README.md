@@ -10,7 +10,7 @@ It's worth a mention, that building and maintaining test app infrastructure is p
 
 This application demonstrate the following functionalities:
 - Usage of ASP.NET Core API Controllers,
-- JWT (JSON Web Token) authentication,
+- JWT (Bearer Token) Based Authentication,
 - [API versioning](https://github.com/Microsoft/aspnet-api-versioning)
 - exposing [Data Transfer Objects (DTO)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-5) to Client,
 - [Swagger API auto documenting tool](https://swagger.io/)
@@ -20,15 +20,20 @@ This application demonstrate the following functionalities:
 - [In-Memory integration tests](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-2.2) with Entity Framework Core,
 - Unit tests ([xUnit](https://xunit.github.io/) & [Moq](https://github.com/Moq/moq4/wiki/Quickstart))
 
-## Prerequisites:
+## Prerequisites
 - [Visual Studio](https://www.visualstudio.com/vs/community) 2017 15.9 or greater
 - [.NET Core SDK 2.2.102](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
-## Technologies and frameworks used:
+## Tags & Technologies
 - ASP.NET MVC Core 2.2
 - Entity Framework Core 2.2
 - ASP.NET Identity Core 2.2
 
 Based on this <a href="https://matjazbravc.github.io/aspnetcoreintegrationtests/" target="_blank">blog post</a>.
 
-Have fun!
+Enjoy!
+
+## Licence
+
+Licenced under [MIT](http://opensource.org/licenses/mit-license.php).
+Developed by [Matjaž Bravc](https://si.linkedin.com/in/matjazbravc)
